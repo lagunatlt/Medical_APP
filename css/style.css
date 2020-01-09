@@ -74,6 +74,10 @@ h1 {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.index-form a::active, .index-form a::focus {
+  outline: none !important;
+}
+
 .button {
   display: inline-block;
   width: 100%;
@@ -87,6 +91,10 @@ h1 {
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background: radial-gradient(94.44% 2329.73% at 98.41% 100%, #0985FF 0%, #C49DFF 100%);
+}
+
+.button::active, .button::focus {
+  outline: none !important;
 }
 
 .form-wrap {
