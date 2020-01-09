@@ -1,0 +1,117 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(133.74% 62.47% at 13.44% 7.73%, #454E6E 0%, #252B3E 100%);
+}
+
+.container {
+  margin: 0 auto;
+  width: 398px;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.index__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 12vh;
+  padding-bottom: 5vh;
+}
+
+.index-form a {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 40px 0;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  background: radial-gradient(94.44% 2329.73% at 98.41% 100%, #0985FF 0%, #C49DFF 100%);
+}
+
+.form-wrap {
+  background: #343A4E;
+  border-radius: 20px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.form input {
+  height: 70px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: #464F6E;
+  border-radius: 10px;
+  border: none;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 28px;
+}
+
+.form input:last-child {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
