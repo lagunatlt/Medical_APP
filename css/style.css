@@ -76,6 +76,7 @@ h1 {
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
+  cursor: pointer;
   background: radial-gradient(94.44% 2329.73% at 98.41% 100%, #0985FF 0%, #C49DFF 100%);
 }
 
@@ -111,7 +112,7 @@ h1 {
   padding: 0 28px;
 }
 
-.form input:last-child {
+#pass {
   margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
