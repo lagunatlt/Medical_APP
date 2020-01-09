@@ -60,8 +60,12 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 12vh;
+  padding-top: 9vh;
   padding-bottom: 5vh;
+}
+
+.logo img {
+  padding-bottom: 15px;
 }
 
 .index-form a {
@@ -95,6 +99,11 @@ h1 {
 
 .button:active, .button:focus {
   outline: none !important;
+}
+
+.button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .form-wrap {
