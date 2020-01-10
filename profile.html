@@ -13,47 +13,46 @@
 </head>
 
 <body>
-	<!-- <section class="search-header">
+	<section class="profile">
 		<div class="container">
-			<div class="search-header__wrap">
-				<div class="header__nav">
-					<a href="#" class="arrow-back"></a>
-					<h3 class="header__title">Поиск</h3>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- <section class="main-search">
-		<div class="container">
-			<div class="main-search__wrap container__wrap">
-				<div class="form__input-search">
-					<form action="">
-						<input class="input input-search input-white" type="search" name="search" id="search" placeholder="Поиск">
-					</form>
-				</div>
-				<div class="top-search">
-					<span>Популярные запросы:</span>
-					<ul>
-						<li><a href="#">ВИЧ</a></li>
-						<li><a href="#">Иммунодефицит</a></li>
-						<li><a href="#">СР</a></li>
-						<li><a href="#">ЛУИН</a></li>
-						<li><a href="#">Заболевания</a></li>
-						<li><a href="#">СПИД</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<section class="footer">
-		<div class="container">
-			<div class="footer__wrap">
-				<a href="#"><img src="./img/footer/cat.svg" alt="category"></a>
-				<a href="#"><img src="./img/footer/search-f.svg" alt="search"></a>
-				<a href="#"><img src="./img/footer/profile.svg" alt="profile"></a>
+			<div class="profile-image">
+				<a href="#" class="profile-image__img item__img-wrap"></a>
+				<h2>Профиль</h2>
 			</div>
 		</div>
 	</section>
+	<section class="main-profile">
+		<div class="container">
+			<div class="main-profile__wrap container__wrap">
+				<div class="profile-alert">
+					<p class="font-list">Авторизируйтесь и оставляйте
+						комментарии на форуме</p>
+					<a href="auth.html" class="button button-main button-link">Авторизоваться</a>
+				</div>
+				<div class="settings font-list">
+					<div class="push" id="pushSpan">
+						<span>Push-уведомления</span>
+						<div class="setting-check" id="pushOk">
+							<input type="checkbox" name="push" id="push" checked>
+						</div>
+					</div>
+					<div class="about">
+						<a class="font-list" href="#"><span>О приложении</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="footer__wrap">
+				<a href="category.html"><img src="./img/footer/cat.svg" alt="category"></a>
+				<a href="search.html"><img src="./img/footer/search-f.svg" alt="search"></a>
+				<a href="profile.html"><img src="./img/footer/profile.svg" alt="profile"></a>
+			</div>
+		</div>
+	</section>
+	<script src="/js/main.js"></script>
 </body>
 
 </html>

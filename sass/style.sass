@@ -13,8 +13,8 @@
 body
 	position: relative
 	background: radial-gradient(133.74% 62.47% at 13.44% 7.73%, #454E6E 0%, #252B3E 100%)
-	height: calc(100vh + 60px)
-	// height: 100vh
+	// height: calc(100vh + 60px)
+	height: 100%
 
 .container
 	width: 360px
@@ -44,17 +44,19 @@ h3
 	display: flex
 	flex-direction: column
 	justify-content: space-between
-	height: 100%
+	height: 100vh
 .logo
 	display: flex
 	justify-content: center
 	align-items: center
 	flex-direction: column
-	padding-top: 9vh
-	padding-bottom: 5vh
+	padding-top: 10%
+	// padding-bottom: 5vh
 	img
 		padding-bottom: 15px
 .index-form
+	background: #343A4E
+	border-radius: 20px 20px 0px 0px
 	a
 		font-weight: 500
 		font-size: 20px
@@ -75,19 +77,30 @@ h3
 	font-weight: 600
 	font-size: 20px
 	line-height: 24px
-	color: #FFFFFF
 	cursor: pointer
 	margin: 10px 0 10px
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-	background: radial-gradient(94.44% 2329.73% at 98.41% 100%, #0985FF 0%, #C49DFF 100%)
+	&-main
+		color: #FFFFFF
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+		background: radial-gradient(94.44% 2329.73% at 98.41% 100%, #0985FF 0%, #C49DFF 100%)
 	&:active,
 	&:focus
 		outline: none !important
 	&:active
 		transform: scale(0.98)
+	&-transparent
+		text-decoration: none
+		border: 2px solid #0F86FF
+		color: #3C4856
+		display: flex
+		justify-content: center
+		align-items: center
+	&-border-none
+		border: none
+		margin: 5px 0 5px
+
+
 .form-wrap
-	background: #343A4E
-	border-radius: 20px 20px 0px 0px
 	display: flex
 	flex-direction: column
 	align-content: center
@@ -110,11 +123,15 @@ h3
 		position: relative
 		background: #ffffff
 		color: #75858C
+	&-shadow
+		box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
 	
 
 .search
 	&__wrap
 		padding-top: 40px
+		padding-left: 10px
+		padding-right: 10px
 			
 .form__input-search
 	position: relative
@@ -125,7 +142,7 @@ h3
 		left: 30px
 		width: 16px
 		height: 16px
-		background-image: url(../img/search.svg)
+		background-image: url(/img/search.svg)
 		background-repeat: no-repeat
 		background-size: cover
 		background-position: center
@@ -134,18 +151,21 @@ h3
 		padding: 0 28px 0 64px
 .category
 	padding-bottom: 70px
+	height: 100vh
 .category__wrap
 	h2
 		padding-left: 27px
 		padding-bottom: 20px
 .cat__items
 	display: flex
-	justify-content: space-around
+	justify-content: space-between
 	flex-wrap: wrap
+	padding-left: 10px
+	padding-right: 10px
 
 .cat__item
-	width: 170px
-	height: 170px
+	width: 165px
+	height: 165px
 	margin-bottom: 10px
 	display: flex
 	justify-content: center
@@ -267,14 +287,156 @@ h3
 			left: 0
 			width: 16px
 			height: 16px
-			background-image: url(../img/search-top.svg)
+			background-image: url(/img/search-top.svg)
 			background-repeat: no-repeat
 			background-size: cover
 			background-position: center
 
 
+.profile-image
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 40px 0
+	&__img
+		background-color: #464F6E
+		background-image: url(/img/category/profile.svg)
+		background-repeat: no-repeat
+		background-position: center
+		position: relative
+		&::after
+			content: '+'
+			width: 21px
+			height: 21px
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			bottom: 0
+			right: 0
+			background-color: #70DA40
+			border-radius: 50%
+			color: #ffffff
+			font-size: 20px
+.profile-alert
+	background: #FFFFFF
+	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
+	border-radius: 10px
+	padding: 26px 20px
+	p
+		text-align: center
+.font-list
+	font-style: normal
+	font-weight: normal
+	font-size: 18px
+	line-height: 22px
+	letter-spacing: 0.01em
+	color: #3C4856
+
+.button-link
+	text-decoration: none
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 30px 0 5px
+.settings
+	background: #FFFFFF
+	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
+	border-radius: 10px
+	margin-top: 10px
+	padding-left: 20px
+	padding-right: 20px
+	height: 100%
+	font-weight: 500
+	a
+		text-decoration: none
+		font-weight: 500
+	span
+		position: relative
+		display: flex
+		align-items: center
+		list-style: none
+		border-bottom: 1px solid RGBA(213, 223, 228, 0.7)
+		width: 100%
+		height: 65px
+		padding-left: 30px
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			width: 10px
+			height: 10px
+			background: #0F86FF
+			border-radius: 50px
+.push
+	display: flex
+	justify-content: space-between
+	position: relative
+.setting-check
+	position: absolute
+	top: 20px
+	right: 0
+.setting-check,
+.auth-check
+	width: 26px
+	height: 26px
+	// cursor: pointer
+	background: #FFFFFF
+	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
+	border-radius: 10px
+	background-repeat: no-repeat
+	background-position: center
+	// background-image: url(/img/check.svg)
 
 
+#push
+	opacity: 0
+		z-index: -1
+	width: 1px
+	height: 1px
+#pushSpan
+	cursor: pointer
+	z-index: 10
+	user-select: none
+
+.about
+	span
+		&::after
+			content: ''
+			width: 16px
+			height: 16px
+			position: absolute
+			right: 0
+			background-image: url(/img/about-arrow.svg)
+			background-position: center
+			background-repeat: no-repeat
+
+.auth-main__wrap
+	background: #F7FAFC
+	border-radius: 20px 20px 0px 0px
+	height: 100vh
+	p
+		font-style: normal
+		font-weight: normal
+		font-size: 15px
+		line-height: 22px
+		letter-spacing: 0.01em
+		color: #3C4856
+		padding: 0 20px 30px 40px
+.auth-check__wrap
+	position: relative
+	padding-top: 15px
+.auth-check
+	position: absolute
+	// cursor: pointer
+	a
+		text-decoration-line: underline
+		color: #0F86FF
+#ok
+	opacity: 0
+	width: 26px
+	height: 26px
+	cursor: pointer
 
 
 
