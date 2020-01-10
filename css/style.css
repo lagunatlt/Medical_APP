@@ -42,6 +42,14 @@ h2 {
   color: #FFFFFF;
 }
 
+h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
 .index__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,6 +306,111 @@ h2 {
 .img-share__wrap {
   background: -webkit-gradient(linear, left top, right top, from(#FE7C9A), to(#FF9DA0));
   background: linear-gradient(90deg, #FE7C9A 0%, #FF9DA0 100%);
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 77px;
+}
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-left: -40px;
+}
+
+.arrow-back {
+  background-image: url(/img/arrow-back.svg);
+  background-repeat: no-repeat;
+  padding: 0 20px;
+  background-position: center;
+  width: 27px;
+  height: 17px;
+  z-index: 1;
+}
+
+.main-search__wrap {
+  background: #F1F2F6;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px;
+  height: 100vh;
+}
+
+.top-search {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5);
+          box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5);
+  border-radius: 10px;
+  padding: 25px 29px;
+  height: 100%;
+}
+
+.top-search span {
+  display: block;
+  height: 58px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #3C4856;
+}
+
+.top-search li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  border-bottom: 1px solid RGBA(213, 223, 228, 0.7);
+  width: 100%;
+  height: 58px;
+  padding-left: 32px;
+}
+
+.top-search li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #0F86FF;
+}
+
+.top-search li::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/search-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .footer {
