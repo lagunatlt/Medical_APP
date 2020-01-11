@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<div lang="ru">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,31 +13,38 @@
 </head>
 
 <body>
-	<section class="profile">
+	<section class="info-header">
 		<div class="container">
-			<div class="profile-image">
-				<a href="#" class="profile-image__img item__img-wrap"></a>
-				<h2>Профиль</h2>
+			<div class="info-image">
+				<div class="item__img-wrap img-media__wrap">
+					<div class="item__img img-media">
+					</div>
+				</div>
+				<h2>Медиа</h2>
 			</div>
 		</div>
 	</section>
-	<section class="main-profile">
+	<section class="info-main">
 		<div class="container">
 			<div class="main-profile__wrap container__wrap">
-				<div class="profile-alert">
+				<!-- <div class="profile-alert">
 					<p class="font-list">Авторизируйтесь и оставляйте
 						комментарии на форуме</p>
 					<a href="auth.html" class="button button-main button-link">Авторизоваться</a>
+				</div> -->
+				<div class="form__input-search">
+					<form action="">
+						<input class="input input-search input-white" type="search" name="search" id="search"
+							placeholder="Поиск видео">
+					</form>
 				</div>
-				<div class="main-list font-list">
-					<ul>
-						<li class="push" id="pushSpan">
-							<div class="setting-check" id="pushOk">
-								<input type="checkbox" name="push" id="push" checked>
-							</div>Push-уведомления
-						</li id="pushSpan">
-						<li><a href="#">О приложении</a></li>
-					</ul>
+				<div class="video-list">
+					<div class="video_item" style="background-image: url(/img/video1.png);">
+					</div>
+					<p class="video__title">История сифилиса</p>
+					<div class="video_item" style="background-image: url(/img/video2.png);">
+					</div>
+					<p class="video__title">Вирус папилломы человека</p>
 				</div>
 			</div>
 		</div>
@@ -51,7 +58,6 @@
 			</div>
 		</div>
 	</section>
-	<script src="/js/main.js"></script>
 </body>
 
-</html>
+</div>
