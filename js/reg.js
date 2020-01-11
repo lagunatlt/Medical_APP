@@ -1,15 +1,16 @@
 let authCheck = document.getElementById('authCheck')
 let ok = document.getElementById('ok')
-	if (ok.checked) {
-		authCheck.style.backgroundImage = 'url(/img/check.svg)'
-	}
-ok.addEventListener('click', () => {
+
+let checkbox = function() {
 	if (ok.checked) {
 		authCheck.style.backgroundImage = 'url(/img/check.svg)'
 	} else {
 		authCheck.style.backgroundImage = 'none'
 	}
-})
+};
+
+ok.addEventListener('click', checkbox);
+checkbox();
 
 // --------------Phone
 window.addEventListener("DOMContentLoaded", function () {

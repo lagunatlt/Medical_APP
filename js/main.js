@@ -1,10 +1,14 @@
 let pushOk = document.getElementById('pushOk')
 let push = document.getElementById('push')
 let pushSpan = document.getElementById('pushSpan')
-if (push.checked) {
-	pushOk.style.backgroundImage = 'url(/img/check.svg)'
-}
-pushSpan.addEventListener('click', () => {
+
+let checkboxPushOk = function() {
+	if (push.checked) {
+		pushOk.style.backgroundImage = 'url(/img/check.svg)'
+	}
+};
+
+let checkboxPush = function() {
 	if (push.checked) {
 		push.checked = false
 		pushOk.style.backgroundImage = 'none'
@@ -12,7 +16,8 @@ pushSpan.addEventListener('click', () => {
 		push.checked = true
 		pushOk.style.backgroundImage = 'url(/img/check.svg)'
 	}
-})
+};
 
-// --------------------
+pushSpan.addEventListener('click', checkboxPush);
 
+checkboxPushOk();
