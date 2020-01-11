@@ -247,9 +247,7 @@ h3 {
 }
 
 .cat__item {
-  width: 165px;
-  height: 165px;
-  margin-bottom: 10px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,8 +261,19 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 165px;
+  height: 165px;
+  margin-bottom: 10px;
   border-radius: 10px;
   background: #414A69;
+}
+
+.cat__item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .cat__item span {
@@ -449,7 +458,8 @@ h3 {
   background-position: center;
 }
 
-.profile-image {
+.profile-image,
+.info-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,12 +473,17 @@ h3 {
   padding: 40px 0;
 }
 
-.profile-image__img {
-  background-color: #464F6E;
-  background-image: url(/img/category/profile.svg);
+.profile-image__img,
+.info-image__img {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  margin-bottom: 5px;
+}
+
+.profile-image__img {
+  background-color: #464F6E;
+  background-image: url(/img/category/profile.svg);
 }
 
 .profile-image__img::after {
@@ -499,6 +514,7 @@ h3 {
           box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5);
   border-radius: 10px;
   padding: 26px 20px;
+  margin-bottom: 10px;
 }
 
 .profile-alert p {
@@ -528,24 +544,26 @@ h3 {
   margin: 30px 0 5px;
 }
 
-.settings {
+.main-list,
+.info-list {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5);
           box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5);
   border-radius: 10px;
-  margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   height: 100%;
   font-weight: 500;
 }
 
-.settings a {
+.main-list a,
+.info-list a {
   text-decoration: none;
   font-weight: 500;
 }
 
-.settings span {
+.main-list span,
+.info-list span {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +578,8 @@ h3 {
   padding-left: 30px;
 }
 
-.settings span::before {
+.main-list span::before,
+.info-list span::before {
   content: '';
   position: absolute;
   left: 0;
@@ -614,7 +633,7 @@ h3 {
           user-select: none;
 }
 
-.about span::after {
+.main-list__item span::after {
   content: '';
   width: 16px;
   height: 16px;

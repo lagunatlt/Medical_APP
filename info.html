@@ -13,36 +13,39 @@
 </head>
 
 <body>
-	<section class="profile">
+	<section class="info-header">
 		<div class="container">
-			<div class="profile-image">
-				<a href="#" class="profile-image__img item__img-wrap"></a>
-				<h2>Профиль</h2>
+			<div class="info-image">
+				<div class="item__img-wrap img-info__wrap">
+					<div class="item__img img-info">
+					</div>
+				</div>
+				<h2>Информация</h2>
 			</div>
 		</div>
 	</section>
-	<section class="main-profile">
+	<section class="info-main">
 		<div class="container">
 			<div class="main-profile__wrap container__wrap">
-				<div class="profile-alert">
+				<!-- <div class="profile-alert">
 					<p class="font-list">Авторизируйтесь и оставляйте
 						комментарии на форуме</p>
 					<a href="auth.html" class="button button-main button-link">Авторизоваться</a>
+				</div> -->
+				<div class="form__input-search">
+					<form action="">
+						<input class="input input-search input-white" type="search" name="search" id="search" placeholder="Поиск темы">
+					</form>
 				</div>
 				<div class="main-list font-list">
-					<ul>
+					<ul >
 						<li>1</li>
 						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
 					</ul>
-					<div class="push" id="pushSpan">
-						<span>Push-уведомления</span>
-						<div class="setting-check" id="pushOk">
-							<input type="checkbox" name="push" id="push" checked>
-						</div>
-					</div>
-					<div class="about">
-						<a class="font-list" href="#"><span>О приложении</span></a>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -56,7 +59,6 @@
 			</div>
 		</div>
 	</section>
-	<script src="/js/main.js"></script>
 </body>
 
 </html>

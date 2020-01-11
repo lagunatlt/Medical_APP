@@ -164,15 +164,22 @@ h3
 	padding-right: 10px
 
 .cat__item
-	width: 165px
-	height: 165px
-	margin-bottom: 10px
+	position: relative
 	display: flex
 	justify-content: center
 	align-items: center
 	flex-direction: column
+	width: 165px
+	height: 165px
+	margin-bottom: 10px
 	border-radius: 10px
 	background: #414A69
+	a
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
 	span
 		padding-top: 12px
 		font-style: normal
@@ -293,17 +300,21 @@ h3
 			background-position: center
 
 
-.profile-image
+.profile-image,
+.info-image
 	display: flex
 	flex-direction: column
 	align-items: center
 	padding: 40px 0
 	&__img
-		background-color: #464F6E
-		background-image: url(/img/category/profile.svg)
 		background-repeat: no-repeat
 		background-position: center
 		position: relative
+		margin-bottom: 5px
+.profile-image
+	&__img
+		background-color: #464F6E
+		background-image: url(/img/category/profile.svg)
 		&::after
 			content: '+'
 			width: 21px
@@ -323,6 +334,7 @@ h3
 	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
 	border-radius: 10px
 	padding: 26px 20px
+	margin-bottom: 10px
 	p
 		text-align: center
 .font-list
@@ -339,11 +351,12 @@ h3
 	justify-content: center
 	align-items: center
 	margin: 30px 0 5px
-.settings
+.main-list,
+.info-list
 	background: #FFFFFF
 	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
 	border-radius: 10px
-	margin-top: 10px
+	// margin-top: 10px
 	padding-left: 20px
 	padding-right: 20px
 	height: 100%
@@ -399,7 +412,7 @@ h3
 	z-index: 10
 	user-select: none
 
-.about
+.main-list__item
 	span
 		&::after
 			content: ''
@@ -437,6 +450,7 @@ h3
 	width: 26px
 	height: 26px
 	cursor: pointer
+
 
 
 
