@@ -221,7 +221,7 @@ h3 {
   left: 30px;
   width: 16px;
   height: 16px;
-  background-image: url(./img/search.svg);
+  background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -308,7 +308,7 @@ h3 {
 }
 
 .img-info {
-  background-image: url(./img/category/info.svg);
+  background-image: url(../img/category/info.svg);
 }
 
 .img-info__wrap {
@@ -317,7 +317,7 @@ h3 {
 }
 
 .img-media {
-  background-image: url(./img/category/media.svg);
+  background-image: url(../img/category/media.svg);
 }
 
 .img-media__wrap {
@@ -326,7 +326,7 @@ h3 {
 }
 
 .img-test {
-  background-image: url(./img/category/test.svg);
+  background-image: url(../img/category/test.svg);
 }
 
 .img-test__wrap {
@@ -335,7 +335,7 @@ h3 {
 }
 
 .img-forum {
-  background-image: url(./img/category/forum.svg);
+  background-image: url(../img/category/forum.svg);
 }
 
 .img-forum__wrap {
@@ -344,7 +344,7 @@ h3 {
 }
 
 .img-contacts {
-  background-image: url(./img/category/contacts.svg);
+  background-image: url(../img/category/contacts.svg);
 }
 
 .img-contacts__wrap {
@@ -353,7 +353,7 @@ h3 {
 }
 
 .img-share {
-  background-image: url(./img/category/share.svg);
+  background-image: url(../img/category/share.svg);
 }
 
 .img-share__wrap {
@@ -396,11 +396,11 @@ h3 {
 }
 
 .arrow-back {
-  background-image: url(./img/arrow-back.svg);
+  background-image: url(../img/arrow-back.svg);
 }
 
 .close {
-  background-image: url(./img/close.svg);
+  background-image: url(../img/close.svg);
 }
 
 .container__wrap {
@@ -465,7 +465,7 @@ h3 {
   left: 0;
   width: 16px;
   height: 16px;
-  background-image: url(./img/search-top.svg);
+  background-image: url(../img/search-top.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -496,7 +496,7 @@ h3 {
 
 .profile-image__img {
   background-color: #464F6E;
-  background-image: url(./img/category/profile.svg);
+  background-image: url(../img/category/profile.svg);
 }
 
 .profile-image__img::after {
@@ -599,7 +599,7 @@ h3 {
   position: absolute;
   right: 0;
   top: 24px;
-  background-image: url(./img/list-arrow.svg);
+  background-image: url(../img/list-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -776,7 +776,7 @@ h3 {
 .pag_arrow-next {
   width: 16px;
   height: 16px;
-  background-image: url(./img/list-arrow.svg);
+  background-image: url(../img/list-arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -898,11 +898,11 @@ h3 {
 }
 
 .button-add::before {
-  background-image: url(./img/b-add.svg);
+  background-image: url(../img/b-add.svg);
 }
 
 .button-reply::before {
-  background-image: url(./img/reply.svg);
+  background-image: url(../img/reply.svg);
 }
 
 .forum__post,
@@ -1087,7 +1087,7 @@ h3 {
   height: 44px;
   border-radius: 50%;
   background: rgba(15, 134, 255, 0.05);
-  background-image: url(./img/load.svg);
+  background-image: url(../img/load.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1140,7 +1140,7 @@ h3 {
 .test-logo {
   width: 30px;
   height: 33px;
-  background-image: url(./img/test-ok.svg);
+  background-image: url(../img/test-ok.svg);
   background-repeat: no-repeat;
   background-origin: center;
 }
