@@ -3,7 +3,7 @@ let ok = document.getElementById('ok')
 
 let checkbox = function() {
 	if (ok.checked) {
-		authCheck.style.backgroundImage = 'url(./img/check.svg)'
+		authCheck.style.backgroundImage = 'url(../img/check.svg)'
 	} else {
 		authCheck.style.backgroundImage = 'none'
 	}

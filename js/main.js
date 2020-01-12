@@ -4,7 +4,7 @@ let pushSpan = document.getElementById('pushSpan')
 
 let checkboxPushOk = function() {
 	if (push.checked) {
-		pushOk.style.backgroundImage = 'url(./img/check.svg)'
+		pushOk.style.backgroundImage = 'url(../img/check.svg)'
 	}
 };
 
@@ -14,7 +14,7 @@ let checkboxPush = function() {
 		pushOk.style.backgroundImage = 'none'
 	} else {
 		push.checked = true
-		pushOk.style.backgroundImage = 'url(./img/check.svg)'
+		pushOk.style.backgroundImage = 'url(../img/check.svg)'
 	}
 };
 
