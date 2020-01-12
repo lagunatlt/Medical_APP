@@ -19,6 +19,11 @@ body
 .container
 	width: 360px
 	margin: 0 auto
+.main-block
+	background: #FFFFFF
+	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
+	border-radius: 10px
+	padding: 18px 20px
 h1
 	font-weight: 600
 	font-size: 30px
@@ -239,15 +244,18 @@ h3
 	width: 100%
 	margin-left: -40px
 
-.arrow-back
-	background-image: url(/img/arrow-back.svg)
+.arrow-back,
+.close
 	background-repeat: no-repeat
 	padding: 0 20px
 	background-position: center
 	width: 27px
 	height: 17px
 	z-index: 1
-
+.arrow-back
+	background-image: url(/img/arrow-back.svg)
+.close
+	background-image: url(/img/close.svg)
 .container__wrap
 	position: relative
 	background: #F1F2F6
@@ -255,10 +263,6 @@ h3
 	padding: 10px
 	height: 100%
 .top-search
-	background: #FFFFFF
-	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
-	border-radius: 10px
-	padding: 25px 29px
 	margin-bottom: 100px
 	padding-bottom: 50%
 	span
@@ -332,10 +336,6 @@ h3
 			color: #ffffff
 			font-size: 20px
 .profile-alert
-	background: #FFFFFF
-	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
-	border-radius: 10px
-	padding: 26px 20px
 	margin-bottom: 10px
 	p
 		text-align: center
@@ -357,12 +357,6 @@ h3
 .main-list,
 .info-list,
 .forum-list
-	background: #FFFFFF
-	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
-	border-radius: 10px
-	// margin-top: 10px
-	padding-left: 20px
-	padding-right: 20px
 	height: calc(100% - 70px)
 	font-weight: 500
 	a
@@ -445,6 +439,8 @@ h3
 		letter-spacing: 0.01em
 		color: #3C4856
 		padding: 0 20px 30px 40px
+	a
+		color: #1E8EFF
 .auth-check__wrap
 	position: relative
 	padding-top: 15px
@@ -470,7 +466,7 @@ h3
 	letter-spacing: 0.01em
 	color: #3C4856
 	padding: 40px 20px 140px
-	height: 100%
+	height: calc(100vh + 150px)
 	p
 		padding-bottom: 20px
 	h4
@@ -528,6 +524,8 @@ h3
 .video-list
 	margin-bottom: 100px
 	padding-bottom: 50%
+	iframe
+		border-radius: 20px
 	p
 		font-style: normal
 		font-weight: 500
@@ -595,10 +593,6 @@ h3
 
 .forum__post,
 .post__comment
-	padding: 22px 24px
-	background: #FFFFFF
-	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
-	border-radius: 10px
 	margin-bottom: 10px
 .forum__post
 	p
@@ -683,7 +677,86 @@ h3
 .post__date
 	padding-right: 20px
 
+.text-comment
+	width: 100%
+	border: none
+	margin-bottom: 20px
+	resize: none
+	font-size: 20px
+	line-height: 24px
+	color: #75858C
+.comment-check
+	display: flex
+	align-items: center
+	p
+		padding-left: 50px
+		ont-style: normal
+		font-weight: 500
+		font-size: 18px
+		line-height: 30px
+		letter-spacing: 0.01em
+		color: #3C4856
 
+.add-comment__wrap .auth-check__wrap
+	padding-bottom: 4vh
+
+.add-comment__wrap form
+	height: 100%
+	padding-bottom: 80px
+.input-load
+	color:#38394A
+	display: flex
+	align-items: center
+	justify-content: space-between
+.load-img
+	width: 44px
+	height: 44px
+	border-radius: 50%
+	background: rgba(15, 134, 255, 0.05)
+	background-image: url(/img/load.svg)
+	background-repeat: no-repeat
+	background-position: center
+
+.main-map__wrap
+	height: 100vh
+.map
+	position: relative
+	height: 100%
+	border-radius: 20px 20px 0px 0px
+	overflow: hidden
+	background: #F7FAFC
+
+.test__item
+	height: 100vh
+.test
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 18px
+.test-title__wrap
+	width: 86%
+.test-title
+	display: flex
+	justify-content: space-between
+	align-items: center
+.test-logo
+	width: 30px
+	height: 33px
+	background-image: url(/img/test-ok.svg)
+	background-repeat: no-repeat
+	background-origin: center
+	// background-size: 100%
+.test-result
+	font-weight: 600
+	font-size: 12px
+	line-height: 15px
+	letter-spacing: 0.01em
+	color: #49C589
+.test-progress
+	width: 100%
+	height: 5px
+	background: #49C589
+	border-radius: 50px
 
 
 

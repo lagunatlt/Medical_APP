@@ -17,21 +17,25 @@
 		<div class="container">
 			<div class="header__wrap">
 				<div class="header__nav">
-					<a href="info.html" class="arrow-back"></a>
-					<h3 class="header__title">Профилактика ИППП</h3>
+					<a href="forum-item.html" class="close"></a>
+					<h3 class="header__title">Комментарий</h3>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="description">
+	<section class="add-comment">
 		<div class="container">
-			<div class="descr__wrap">
-				<p>
-					При правильном и постоянном использовании презервативы являются одним из самых эффективных методов защиты от ИППП,
-					включая ВИЧ. Женские презервативы эффективны и безопасны, но не используются национальными программами так же
-					широко, как мужские презервативы
-				</p>
-
+			<div class="add-comment__wrap container__wrap">
+				<form action="" method="">
+					<textarea class="main-block text-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Ваш комментарий*"></textarea>
+					<div class="auth-check__wrap comment-check">
+						<div class="auth-check" id="authCheck">
+							<input type="checkbox" name="ok" id="ok" checked>
+						</div>
+						<p>Анонимный комментарий</p>
+					</div>
+					<button class="button button-main" type="">Оставить</button>
+				</form>
 			</div>
 		</div>
 	</section>
@@ -44,6 +48,7 @@
 			</div>
 		</div>
 	</section>
+	<script src="/js/reg.js"></script>
 </body>
 
 </html>
