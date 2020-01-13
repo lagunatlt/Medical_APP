@@ -1146,9 +1146,20 @@ h3 {
 .test-logo {
   width: 30px;
   height: 33px;
-  background-image: url(../img/test-ok.svg);
   background-repeat: no-repeat;
   background-origin: center;
+}
+
+.test-logo__ok {
+  background-image: url(../img/test-ok.svg);
+}
+
+.test-logo__progress {
+  background-image: url(../img/test-progress.svg);
+}
+
+.test-logo__none {
+  background-image: url(../img/test-none.svg);
 }
 
 .test-result__wrap {
@@ -1161,7 +1172,7 @@ h3 {
   letter-spacing: 0.01em;
 }
 
-.test-result__start {
+.test-result__progress {
   color: #49C589;
 }
 
