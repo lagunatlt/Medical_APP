@@ -740,6 +740,12 @@ h3
 	display: flex
 	justify-content: space-between
 	align-items: center
+	font-style: normal
+	font-weight: 600
+	font-size: 18px
+	line-height: 22px
+	letter-spacing: 0.01em
+	color: #3C4856
 .test-logo
 	width: 30px
 	height: 33px
@@ -747,17 +753,33 @@ h3
 	background-repeat: no-repeat
 	background-origin: center
 	// background-size: 100%
-.test-result
+.test-result__wrap
+	display: flex
 	font-weight: 600
 	font-size: 12px
 	line-height: 15px
 	letter-spacing: 0.01em
+.test-result__start
+	color: #49C589
+.test-result__end
 	color: #49C589
 .test-progress
+	position: relative
 	width: 100%
 	height: 5px
-	background: #49C589
+	// background: #49C589
 	border-radius: 50px
+	background: #ECEFF2
+	overflow: hidden
+.progress-bar
+	background: #49C589
+	width: 100%
+	position: absolute
+	height: 5px
+	border-radius: 50px
+
+
+
 .block-vh
 	height: 100vh
 .block-vh200
