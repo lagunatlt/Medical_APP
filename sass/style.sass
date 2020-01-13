@@ -795,7 +795,70 @@ h3
 .block-vh200
 	height: calc(100vh + 200px)
 
-
+.q-title
+	font-style: normal
+	font-weight: 500
+	font-size: 20px
+	line-height: 30px
+	letter-spacing: 0.01em
+	color: #3C4856
+	padding: 16px 24px
+.q-answer__item
+	padding-bottom: 10px
+.q-answer__wrap
+	position: relative
+	height: 70px
+	display: flex
+	// justify-content: space-between
+	align-items: center
+	padding: 0 28px
+	border-radius: 10px
+	background: #FFFFFF
+	font-style: normal
+	font-weight: 600
+	font-size: 18px
+	line-height: 22px
+	letter-spacing: 0.01em
+	cursor: pointer
+	user-select: none
+	// background-color: red
+	&::after
+		content: ''
+		position: absolute
+		right: 28px
+		width: 18px
+		height: 14px
+		background-repeat: no-repeat
+		background-position: center
+.q-answer__none
+	box-shadow: 0px 4px 10px rgba(213, 223, 228, 0.5)
+	color: #3C4856
+.q-answer__true
+	background: #49C589
+	color: #FFFFFF
+	&::after
+		background-image: url(../img/a-true.svg)
+.q-answer__false
+	background: #FF5B5B
+	color: #FFFFFF
+	&::after
+		background-image: url(../img/a-false.svg)
+// .q-icon__true
+// .q-icon__false
+.q-result
+	transition: all 1s ease
+	display: none
+	font-style: normal
+	font-weight: 600
+	font-size: 14px
+	line-height: 20px
+	// color: #3EC798
+	padding: 16px 30px 6px 30px
+	a
+		font-weight: 500
+		color: #3C4856
+		text-decoration: underline
+		padding-left: 5px
 
 
 
