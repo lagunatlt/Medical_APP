@@ -48,6 +48,7 @@ h2 {
   line-height: 37px;
   letter-spacing: 0.01em;
   color: #FFFFFF;
+  padding-top: 10px;
 }
 
 h3 {
@@ -294,79 +295,82 @@ h3 {
   color: #FFFFFF;
 }
 
-.item__img-wrap {
+.item__img {
+  position: relative;
   width: 77px;
   height: 77px;
   border-radius: 50%;
 }
 
-.item__img {
-  background-repeat: no-repeat;
-  background-position: center;
+.item__img::before {
+  content: '';
+  position: absolute;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .img-info {
-  background-image: url(../img/category/info.svg);
-}
-
-.img-info__wrap {
   background: -webkit-gradient(linear, left top, right top, from(#2EBDFE), to(#46D0FF));
   background: linear-gradient(90deg, #2EBDFE 0%, #46D0FF 100%);
 }
 
-.img-media {
-  background-image: url(../img/category/media.svg);
+.img-info::before {
+  background-image: url(../img/category/info.svg);
 }
 
-.img-media__wrap {
+.img-media {
   background: -webkit-gradient(linear, left top, right top, from(#6AD3AF), to(#7FEAA0));
   background: linear-gradient(90deg, #6AD3AF 0%, #7FEAA0 100%);
 }
 
-.img-test {
-  background-image: url(../img/category/test.svg);
+.img-media::before {
+  background-image: url(../img/category/media.svg);
 }
 
-.img-test__wrap {
+.img-test {
   background: -webkit-gradient(linear, left top, right top, from(#FFC452), to(#FFCF7E));
   background: linear-gradient(90deg, #FFC452 0%, #FFCF7E 100%);
 }
 
-.img-forum {
-  background-image: url(../img/category/forum.svg);
+.img-test::before {
+  background-image: url(../img/category/test.svg);
 }
 
-.img-forum__wrap {
+.img-forum {
   background: -webkit-gradient(linear, left top, right top, from(#8691FE), to(#8791FD));
   background: linear-gradient(90deg, #8691FE 0%, #8791FD 100%);
 }
 
-.img-contacts {
-  background-image: url(../img/category/contacts.svg);
+.img-forum::before {
+  background-image: url(../img/category/forum.svg);
 }
 
-.img-contacts__wrap {
+.img-contacts {
   background: -webkit-gradient(linear, left top, right top, from(#27CCE0), to(#3DDFF1));
   background: linear-gradient(90deg, #27CCE0 0%, #3DDFF1 100%);
 }
 
-.img-share {
-  background-image: url(../img/category/share.svg);
+.img-contacts::before {
+  background-image: url(../img/category/contacts.svg);
 }
 
-.img-share__wrap {
+.img-share {
   background: -webkit-gradient(linear, left top, right top, from(#FE7C9A), to(#FF9DA0));
   background: linear-gradient(90deg, #FE7C9A 0%, #FF9DA0 100%);
 }
 
-.img-finish {
-  background-image: url(../img/finish.svg);
+.img-share::before {
+  background-image: url(../img/category/share.svg);
 }
 
-.img-finish__wrap {
+.img-finish {
   background: #49C589;
+}
+
+.img-finish::before {
+  background-image: url(../img/finish.svg);
 }
 
 .header__nav {
@@ -491,7 +495,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .profile-image__img,
