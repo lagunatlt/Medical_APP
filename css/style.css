@@ -1212,6 +1212,10 @@ h3 {
   height: calc(100vh + 200px);
 }
 
+.q-block {
+  padding-bottom: 10%;
+}
+
 .q-title {
   font-style: normal;
   font-weight: 500;
@@ -1300,6 +1304,20 @@ h3 {
   color: #3C4856;
   text-decoration: underline;
   padding-left: 5px;
+}
+
+.q-result__true {
+  display: block;
+  color: #3EC798;
+}
+
+.q-result__false {
+  display: block;
+  color: #FF5B5B;
+}
+
+.button__wrap .button-link {
+  margin: 10px 0;
 }
 
 .footer {

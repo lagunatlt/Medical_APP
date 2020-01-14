@@ -43,12 +43,10 @@ let answerQuest = function() {
 
 		for (let i = 0; i < quest.length; i++) {
 
-			console.log(quest[i].children[0])
-	
+			// console.log(quest[i].children[0])
 			
 			let quest1 = quest[i].children[1];
 			let spanAnswer = quest[i].children[1].children[0];
-			let answerLogo = quest[i].children[0].children[1];
 			let answerWrap = quest[i].children[0];
 			
 			
@@ -59,19 +57,16 @@ let answerQuest = function() {
 						quest[i].dataset.answer = 'open';
 						answerWrap.classList.remove('q-answer__none');
 						answerWrap.classList.add('q-answer__true');
-						quest1.style.display = 'block';
+						quest1.classList.add('q-result__true');
 						spanAnswer.textContent = 'Верно!';
-						spanAnswer.style.color = '#3EC798';
 						break;
 		
 					case ((quest[i].dataset.test === 'false') && (quest[i].dataset.answer === 'close')):
-						// console.log('ответ неверный');
 						quest[i].dataset.answer = 'open';
 						answerWrap.classList.remove('q-answer__none');
 						answerWrap.classList.add('q-answer__false');
-						quest1.style.display = 'block';
+						quest1.classList.add('q-result__false');
 						spanAnswer.textContent = 'Неверно!';
-						spanAnswer.style.color = '#FF5B5B';
 						break;
 
 
@@ -79,14 +74,14 @@ let answerQuest = function() {
 						quest[i].dataset.answer = 'close';
 						answerWrap.classList.remove('q-answer__true');
 						answerWrap.classList.add('q-answer__none');
-						quest1.style.display = 'none';
+						quest1.classList.remove('q-result__true');
 						break;
 
 					case ((quest[i].dataset.test === 'false') && (quest[i].dataset.answer === 'open')):
 						quest[i].dataset.answer = 'close';
 						answerWrap.classList.remove('q-answer__false');
 						answerWrap.classList.add('q-answer__none');
-						quest1.style.display = 'none';
+						quest1.classList.remove('q-result__false');
 						break;
 						
 				}
